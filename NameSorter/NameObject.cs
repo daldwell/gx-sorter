@@ -23,12 +23,10 @@ namespace NameSorter
 
         public NameObject(string name)
         {
-
             string[] names = name.Split(' ');
 
             for (int i = 0; i < names.Length; i++)
             {
-
                 // If this is the last string in the array it is the last name
                 if (i == names.Length - 1)
                 {
@@ -52,9 +50,7 @@ namespace NameSorter
                             break;
                     }
                 }
-
             }
-
         }
 
         public override string ToString()
@@ -100,7 +96,7 @@ namespace NameSorter
 
             if (i != 0)
                 return i;
-            
+
             // Compare 3rd given name
             // Always return the result as we have no names left to compare
             i = SortUtil.CompareNames(obj1.Givn_nam3, obj2.Givn_nam3);

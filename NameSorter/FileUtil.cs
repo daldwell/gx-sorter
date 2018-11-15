@@ -32,7 +32,6 @@ namespace NameSorter
         /// <returns></returns>
         public static StreamReader GetFileReader(string filename)
         {
-
             try
             {
                 return new StreamReader(filename);

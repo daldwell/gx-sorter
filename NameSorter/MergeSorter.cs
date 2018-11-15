@@ -23,7 +23,6 @@ namespace NameSorter
         /// <param name="outfile"></param>
         public void SortFile(string infile, string outfile)
         {
-
             List<NameObject> sortedNamesList = MergeSort(SortUtil.ReadNamesFromFile(infile));
             SortUtil.WriteNamesToFile(sortedNamesList, outfile);
         }
@@ -59,7 +58,6 @@ namespace NameSorter
         /// <returns>Merged and sorted list of names</returns>
         private List<NameObject> Merge(List<NameObject> listLeft, List<NameObject> listRight)
         {
-
             List<NameObject> listRet = new List<NameObject>();
 
             int i = 0;
@@ -95,7 +93,6 @@ namespace NameSorter
         /// <returns></returns>
         private List<NameObject> Split(List<NameObject> listIn, int l, int r)
         {
-
             List<NameObject> listRet = new List<NameObject>();
 
             for (int i = 0; l + i < r; i++)
@@ -104,7 +101,6 @@ namespace NameSorter
             }
 
             return listRet;
-
         }
 
 

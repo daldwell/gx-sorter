@@ -85,7 +85,6 @@ namespace NameSorter
         /// <param name="name"></param>
         public static void ValidateName(string name)
         {
-
             StringBuilder error = new StringBuilder();
 
             // Name should not contain special characters
@@ -128,7 +127,6 @@ namespace NameSorter
         /// <param name="filename"></param>
         public static void WriteNamesToFile(List<NameObject> names, string filename)
         {
-
             using (System.IO.StreamWriter file = FileUtil.GetFileWriter(filename))
             {
 
@@ -148,7 +146,6 @@ namespace NameSorter
         /// <returns></returns>
         public static List<NameObject> ReadNamesFromFile(string filename)
         {
-
             List<NameObject> nameList = new List<NameObject>();
 
             // Create an instance of StreamReader to read from a file.
@@ -165,7 +162,6 @@ namespace NameSorter
                     nameList.Add(new NameObject(line));
                 }
             }
-
             return nameList;
         }
 
