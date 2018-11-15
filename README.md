@@ -2,9 +2,9 @@
 By Daniel Aldwell
 15/11/2018
 
-=========================================================
+=====================
 = 1. Description
-=========================================================
+=====================
 
 This is a simple Visual Studio C# program that takes a list of people's names from an input text file, sorts the names in alphabetical order by the last and given names, and outputs the result to the screen and an output text file.
 
@@ -12,9 +12,9 @@ This is accomplished by implementing a merge sort algorithm.
 
 Note that the sorting operation could be implemented in a trivial fashion by using one of the existing .NET libraries i.e. a LINQ query or a comparer object. A custom merge sort algorithm was chosen to help showcase my coding style and ability.
 
-=========================================================
+=====================
 = 2. Assumptions
-=========================================================
+=====================
 
 - A name must not contain special characters
 - A name must not contain digits
@@ -23,9 +23,9 @@ Note that the sorting operation could be implemented in a trivial fashion by usi
 - Names are case-insensitive for the purpose of sorting (i.e. lower/uppercase characters are treated as identical)
 
 
-=========================================================
+=====================
 = 3. Class file overview
-=========================================================
+=====================
 
 ----------------
 SortMain.cs
@@ -60,9 +60,9 @@ Filetil.cs
 Contains helper methods for obtaining file read/write handles.
 
 
-=========================================================
+=====================
 = 4. Unit test overview
-=========================================================
+=====================
 
 ----------------
 NameCompareTest.cs
