@@ -55,7 +55,7 @@ StringUtil.cs
 Contains helper methods for string checking and manipulation.
 
 ----------------
-Filetil.cs
+FileUtil.cs
 ----------------
 Contains helper methods for obtaining file read/write handles.
 
